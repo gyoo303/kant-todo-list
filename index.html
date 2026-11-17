@@ -29,7 +29,10 @@
                     <textarea name="content" placeholder="내용 입력" class="border rounded-sm h-25 w-full p-4"></textarea>
                 </dd>
             </dl>
-            <button type="submit" class="bg-blue-300 hover:bg-blue-950 py-2 px-5 rounded-sm text-white text-lg block mx-auto cursor-pointer max-w-xs w-1/2">등록하기</button>
+            <div class="flex justify-center gap-2">
+                <button type="submit" id="submit-button" class="bg-blue-300 hover:bg-blue-950 py-2 px-5 rounded-sm text-white text-lg cursor-pointer max-w-xs w-1/2">등록하기</button>
+                <button type="button" id="cancel-edit-button" class="hidden bg-gray-400 hover:bg-gray-700 py-2 px-5 rounded-sm text-white text-lg cursor-pointer max-w-xs w-1/4">취소</button>
+            </div>
         </form>
         
         <ul id="todo-items" class="m-4 p-4 grid md:grid-cols-2 gap-4"> 
